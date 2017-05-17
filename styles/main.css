@@ -1,0 +1,498 @@
+@font-face {
+ 	font-family: 'SLNTHLE';
+  	src: url('../fonts/SLNTHLE.TTF');
+ }
+
+/*TITLE PAGE CSS*/
+html{
+}
+
+body{
+	background-color: black;
+	margin: 0;
+	padding: 0;
+}
+
+p{
+	margin: 10px;
+}
+
+.mobile-page{
+	position: fixed;
+	left:0; right:0; top:0; bottom:0;
+	background-color: black;
+	background: url("../images/alessa01reduced.jpg") no-repeat center center fixed;
+	z-index: 100;
+	opacity: 0;
+	pointer-events: none;
+	width: 100%;
+	height: 100%;	
+}
+
+.mobile-page h1{
+	font-family: SLNTHLE;
+	font-size: 30px;
+	color: white;
+	text-align: center;
+}
+
+#mobile-message{
+	position: fixed;
+	left:0; right:0; top:0; bottom:0;
+	background-color: rgba(0,0,0,.7);
+	text-align: center;
+	font-family: SLNTHLE;
+	font-size: 25px;
+	color: red;
+}
+#mobile-message p{
+	margin-top: 5em;
+}
+
+.title-container{
+	position: fixed;
+	margin: 0 auto;
+	left:0; top:0; right:0; bottom:0;
+	background: url("../images/title_background.jpg") no-repeat center center fixed;
+	background-size: cover;
+	opacity: 1;
+	transition: 1.5s ease-in;
+}
+
+.title{
+	width: 600px;
+	margin: 0 auto;
+}
+
+#m{
+
+}
+
+.menu{
+	margin: 200px auto 0;
+	width: 600px;
+}
+
+.title h1{
+	text-align: center;
+	color: white;
+	font-family: SLNTHLE;
+	font-size: 70px;
+	margin: 0;
+}
+
+.title h2{
+	text-align: center;
+	color: white;
+	font-family: SLNTHLE;
+	font-size: 40px;
+	text-shadow: 0 5px 40px;	
+	margin: 0;
+}
+
+
+#start{
+	margin: 80px auto 0;
+	width: 300px;
+	height: 60px;
+	color: yellow;
+	font-family: SLNTHLE;
+	font-size: 40px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#start:hover{
+	color: beige;
+	transition: .4s;
+	text-shadow: 0 3px 20px yellow;
+}
+
+#instructions{
+	text-align: center;
+	color: white;
+	font-family: SLNTHLE;
+	font-size: 25px;
+	cursor: pointer;
+}
+#instructions:hover{
+	color: beige;
+	text-shadow: 0 3px 10px black;
+	transition: .4s;
+}
+
+#difficulties{
+	margin-top: 20px;
+	height: 100px;
+	width: 100%;
+	font-family: impact;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	opacity: 0;
+	pointer-events: none;
+	transition: 1.5s;
+}
+
+#reg-dif, #hard-dif{
+	font-family: SLNTHLE;
+	font-size: 18px;
+	color: beige;
+	padding: 10px;
+	cursor: pointer;
+}
+
+#reg-dif:hover, #hard-dif:hover{
+	text-shadow: 0 5px 10px;
+}
+
+/*LIGHTBOX*/
+
+#lightbox{
+	position: fixed;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background-color: rgba(0,0,0,.9);
+	pointer-events: none;
+	font-family: SLNTHLE;
+	font-size: 16px;
+	color: #DAF6F4;
+	opacity: 0;
+	z-index: 2;
+	transition: .4s ease-in;
+}
+
+#lightbox div{
+	position: fixed;
+	width: 600px;
+	height: 250px;
+	top: 50%; left: 50%;
+	margin-top: -125px; 
+	margin-left: -300px;
+
+}
+
+
+/*GAME PAGE*/
+
+.game-page-container{
+	margin: auto;
+	position: fixed;
+	left:0; top:0; right:0; bottom:0;
+	background-size: cover;
+	opacity: 0;
+	transition: 2s ease-in;
+	pointer-events: none;
+}
+
+/*Character Table*/
+.character-bar{
+	margin: auto;
+	width: 620px;
+}
+.character-bar table{
+	height: 60px;
+}
+.character-bar td{
+	border: solid red 1px;
+}
+
+.bar-img{
+	width: 50px;
+	height: 50px;
+	opacity: 0;
+	transition: 1.5s;
+}
+
+/*Grid*/
+.grid{
+	margin: 10px auto;
+	width: 600px;
+	height: 500px;
+}
+
+.box{
+	float: left;
+	height: 150px;
+	box-sizing: border-box;
+	width: 25%;
+	text-align: center;
+	cursor: pointer;
+}
+
+.box-img{
+	width: 100px;
+	height: 100px;
+	animation-duration: .4s;
+	animation-timing-function: linear;
+	transition: .5s;
+	border: solid black 1px;
+	box-shadow: 0 4px 10px;
+}
+
+.box-img:hover{
+	opacity: .8;
+	border: solid white 1px;
+}
+
+.clear{
+	clear: both;
+}
+
+/*GAME PAGE HARD*/
+.game-page-h-container{
+	margin: auto;
+	position: fixed;
+	left:0; top:0; right:0; bottom:0;
+	background-size: cover;
+	opacity: 0;
+	transition: 2s ease-in;
+	pointer-events: none;
+}
+
+.character-bar-h{
+	margin: 0;
+	width: 620px;
+}
+.character-bar-h table{
+	height: 60px;
+}
+.character-bar-h td{
+	border: solid red 1px;
+}
+
+.bar-img-h{
+	width: 50px;
+	height: 50px;
+	opacity: 0;
+	transition: 1.5s;
+}
+
+.box-h{
+	float: left;
+	height: 110px;
+	box-sizing: border-box;
+	width: 20%;
+	text-align: center;
+	cursor: pointer;
+}
+
+.box-img-h{
+	width: 80px;
+	height: 80px;
+	animation-duration: .4s;
+	animation-timing-function: linear;
+	transition: .5s;
+	border: solid black 1px;
+	box-shadow: 0 4px 10px;
+}
+
+.box-img-h:hover{
+	opacity: .8;
+	border: solid white 1px;
+}
+
+/*PYRAMID PAGE*/
+
+#pyramid-page-container{
+	position: fixed;
+	top:0; left:0; right:0; bottom:0;
+	opacity: 0;
+	pointer-events: none;
+	overflow: hidden;
+	width: 100%
+	height: 100%;
+}
+
+
+#pyramid-video {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%
+	height: 100%;
+}
+
+/*Missionary PAGE*/
+
+#missionary-page-container{
+	position: fixed;
+	top:0; left:0; right:0; bottom:0;
+	opacity: 0;
+	pointer-events: none;
+	width: 100%
+	height: 100%;
+}
+
+
+#missionary-video {
+	position: fixed;
+	width: 100%
+	height: 100%;
+}
+
+
+
+/*Monsters Page*/
+
+#mon-page-cont{
+	position: fixed;
+	top:0; left:0; right:0; bottom:0;
+	opacity: 0;
+	pointer-events: none;
+}
+
+#mon-fixed-cont{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 600px;
+	height: 600px;
+	margin-top: -250px;
+	margin-left: -200px;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+}
+
+#monster-img{
+	width: 500px;
+	position: absolute;
+	animation-name: twitch;
+	animation-duration: .3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+/*Game Over Page*/
+
+#game-over-page{
+	top:0; left:0; right:0; bottom:0;
+	position: fixed;
+	background-color: black;
+	z-index: 100;
+	opacity: 0;
+	pointer-events: none;
+	transition: 2s;
+}
+#go-message{
+	position: fixed;
+	top:50%; left:50%;
+	margin-left: -150px;
+	margin-top: -20px;
+	width: 300px;
+	height: 40px;
+	font-family: SLNTHLE;
+	font-size: 30px;
+	text-align: center;
+	color: red;
+}
+
+/*Win Page*/
+
+#win-page{
+	position: fixed;
+	top:0; left:0; right:0; bottom:0;
+	background: url(../images/sh_leave03.jpg) no-repeat center center fixed;
+	opacity: 0;
+	transition: 2s ease-in;
+	pointer-events: none;
+}
+
+#win-text{
+	cursor: default;
+	padding: 10px 20px 0;
+	position: fixed;
+	top: 50%; left: 50%;
+	margin-top: -100px;
+	margin-left: -300px;
+	width: 600px;
+	height: 200px;
+	font-family: SLNTHLE;
+	font-size: 20px;
+	animation-name: textAnim;
+	animation-duration: 13s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+#plus-end-page{
+	position: fixed;
+	top:0; left:0; right:0; bottom:0;
+	opacity: 0;
+	pointer-events: none;
+	width: 100%
+	height: 100%;
+}
+#plus-end-vid{
+	position: fixed;
+	width: 100%
+	height: 100%;
+}
+
+/*TIMER Page*/
+#timer-page{
+	position: fixed;
+	top:0;left:0;right:0;bottom:0;
+	background: url('../images/shemblembackground.jpg') no-repeat center center fixed;
+	opacity: 0;
+	pointer-events: none;
+	transition: .4s;
+	z-index: 10;
+}
+
+
+/*Animations*/
+
+@keyframes showflip{
+	from{
+		transform: rotateY(180deg);
+		opacity: 0;
+	}
+	to{
+		transform: rotateY(0deg);
+		opacity: 1;
+	}
+}
+
+@keyframes hideflip{
+	from{
+		transform: rotateY(180deg);
+		opacity: 0;
+	}
+	to{
+		transform: rotateY(0deg);
+		opacity: 1;
+	}
+}
+
+@keyframes textAnim{
+	0%{color: rgb(211,211,211);}
+	20%{color: #777777;}
+	70%{color: #777777;}
+	100%{color: rgb(211,211,211);}
+}
+
+@keyframes twitch{
+	0%{	left: -4px; top:0;}
+	10%{left: 4px; top:0;}
+	20%{left: -4px; top:0;}
+	30%{left: -4px; top:0;}
+	40%{left: 4px; top: 0;}
+	50%{left: -10px; top: 0;}
+	60%{left: 2px; top:0;}
+	70%{left: -4px; top: 0;}
+	80%{left: 4px; top:0;}
+	90%{left: -4px; top:0;}
+	100%{left: 4px; top: 0;}	
+}
+
+@keyframes fadeIn{
+	from{opacity: .1;}
+	to{opacity: 1;}
+}
+
+@media(max-width: 600px){
+	.mobile-page{
+		opacity: 1;
+		pointer-events: auto;
+	}
+}

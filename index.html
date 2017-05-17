@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Silent Hill Memory Game</title>
+<link rel="stylesheet" type="text/css" href="styles/main.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<!-- Mobile Page -->
+<div class="mobile-page">
+	<!-- <h1>SILENT HILL</h1> -->
+	<div id="mobile-message">
+		<p>Your mobile device has been hacked by the forces of Silent Hill.</p><br>
+		<p>Expect a message from Alessa soon...</p>
+	</div>
+</div>
+
+<!-- TITLE PAGE -->
+
+<div class="title-container">
+	<div class="title"><h1>SILENT HILL</h1><h2><span id="m">m</span>emory</h2></div>
+	<div class="menu">
+		<div id="start">Start Game</div>
+		<div id="instructions">Instructions</div>
+		<div id="difficulties">Difficulty Level
+			<div id="reg-dif">Regular</div>
+			<div id="hard-dif">True Savior</div>
+		</div>	
+	</div>
+</div>
+
+<!-- MODAL WINDOW -->
+<div id="lightbox">
+	<div>
+		<p>Save the characters from being trapped inside Silent Hill.</p><br>
+		<p>Once you start the game, the cells will reveal the location of each character briefly before
+		hiding them again. Your goal is to memorize the location of each character and "save" them by selecting the appropriate cell</p> 
+		<p>Be aware of monsters and especially Pyramid Head. Choosing the cell with a monster will
+		result in your death<p>
+		<p>You have to save each character and avoid all the monsters to win the game<p>
+	</div>
+</div>
+
+<!-- GAME PAGE -->
+
+<div class="game-page-container">
+	<!-- Character Bar -->
+	<div class="character-bar">
+		<table>
+			<tr>
+				<td><img src="images/shemblem_400.jpg" class="bar-img"></td>
+				<td><img src="images/shemblem_400.jpg" class="bar-img"></td>
+				<td><img src="images/shemblem_400.jpg" class="bar-img"></td>
+				<td><img src="images/shemblem_400.jpg" class="bar-img"></td>
+				<td><img src="images/shemblem_400.jpg" class="bar-img"></td>
+				<td><img src="images/shemblem_400.jpg" class="bar-img"></td>
+			
+				<td><img src="images/shemblem_400.jpg" class="bar-img"></td>
+				<td><img src="images/shemblem_400.jpg" class="bar-img"></td>
+				<td><img src="images/shemblem_400.jpg" class="bar-img"></td>
+				<td><img src="images/shemblem_400.jpg" class="bar-img"></td>
+				<td><img src="images/shemblem_400.jpg" class="bar-img"></td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="grid">
+		<div class="grid-row">
+			<div class="box"><img class="box-img" src="images/redsquare.png"></div>
+			<div class="box"><img class="box-img" src="images/redsquare.png"></div>
+			<div class="box"><img class="box-img" src="images/redsquare.png"></div>
+			<div class="box"><img class="box-img" src="images/redsquare.png"></div>
+		</div>
+		<div class="grid-row">
+			<div class="box"><img class="box-img" src="images/redsquare.png"></div>
+			<div class="box"><img class="box-img" src="images/redsquare.png"></div>
+			<div class="box"><img class="box-img" src="images/redsquare.png"></div>
+			<div class="box"><img class="box-img" src="images/redsquare.png"></div>
+		</div>
+		<div class="grid-row">
+			<div class="box"><img class="box-img" src="images/redsquare.png"></div>
+			<div class="box"><img class="box-img" src="images/redsquare.png"></div>
+			<div class="box"><img class="box-img" src="images/redsquare.png"></div>
+			<div class="box"><img class="box-img" src="images/redsquare.png"></div>
+		</div>
+		<div class="grid-row">
+			<div class="box"><img class="box-img" src="images/redsquare.png"></div>
+			<div class="box"><img class="box-img" src="images/redsquare.png"></div>
+			<div class="box"><img class="box-img" src="images/redsquare.png"></div>
+			<div class="box"><img class="box-img" src="images/redsquare.png"></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+<!-- GAME PAGE HARD -->
+
+<div class="game-page-h-container">
+	<!-- Character Bar -->
+	<div class="character-bar-h">
+		<table>
+			<tr>
+				<td><img src="images/shemblem_400.jpg" class="bar-img-h"></td>
+				<td><img src="images/shemblem_400.jpg" class="bar-img-h"></td>
+				<td><img src="images/shemblem_400.jpg" class="bar-img-h"></td>
+				<td><img src="images/shemblem_400.jpg" class="bar-img-h"></td>
+				<td><img src="images/shemblem_400.jpg" class="bar-img-h"></td>
+				<td><img src="images/shemblem_400.jpg" class="bar-img-h"></td>
+				<td><img src="images/shemblem_400.jpg" class="bar-img-h"></td>
+				<td><img src="images/shemblem_400.jpg" class="bar-img-h"></td>
+				<td><img src="images/shemblem_400.jpg" class="bar-img-h"></td>
+			</tr>
+			<tr>
+				<td><img src="images/shemblem_400.jpg" class="bar-img-h"></td>
+				<td><img src="images/shemblem_400.jpg" class="bar-img-h"></td>
+				<td><img src="images/shemblem_400.jpg" class="bar-img-h"></td>
+				<td><img src="images/shemblem_400.jpg" class="bar-img-h"></td>
+				<td><img src="images/shemblem_400.jpg" class="bar-img-h"></td>
+				<td><img src="images/shemblem_400.jpg" class="bar-img-h"></td>
+				<td><img src="images/shemblem_400.jpg" class="bar-img-h"></td>
+				<td><img src="images/shemblem_400.jpg" class="bar-img-h"></td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="grid-h">
+		<div class="grid-row">
+			<div class="box-h"><img class="box-img-h" src="images/redsquare.png"></div>
+			<div class="box-h"><img class="box-img-h" src="images/redsquare.png"></div>
+			<div class="box-h"><img class="box-img-h" src="images/redsquare.png"></div>
+			<div class="box-h"><img class="box-img-h" src="images/redsquare.png"></div>
+			<div class="box-h"><img class="box-img-h" src="images/redsquare.png"></div>
+		</div>
+		<div class="grid-row">
+			<div class="box-h"><img class="box-img-h" src="images/redsquare.png"></div>
+			<div class="box-h"><img class="box-img-h" src="images/redsquare.png"></div>
+			<div class="box-h"><img class="box-img-h" src="images/redsquare.png"></div>
+			<div class="box-h"><img class="box-img-h" src="images/redsquare.png"></div>
+			<div class="box-h"><img class="box-img-h" src="images/redsquare.png"></div>
+		</div>
+		<div class="grid-row">
+			<div class="box-h"><img class="box-img-h" src="images/redsquare.png"></div>
+			<div class="box-h"><img class="box-img-h" src="images/redsquare.png"></div>
+			<div class="box-h"><img class="box-img-h" src="images/redsquare.png"></div>
+			<div class="box-h"><img class="box-img-h" src="images/redsquare.png"></div>
+			<div class="box-h"><img class="box-img-h" src="images/redsquare.png"></div>
+		</div>
+		<div class="grid-row">
+			<div class="box-h"><img class="box-img-h" src="images/redsquare.png"></div>
+			<div class="box-h"><img class="box-img-h" src="images/redsquare.png"></div>
+			<div class="box-h"><img class="box-img-h" src="images/redsquare.png"></div>
+			<div class="box-h"><img class="box-img-h" src="images/redsquare.png"></div>
+			<div class="box-h"><img class="box-img-h" src="images/redsquare.png"></div>
+		</div>
+		<div class="grid-row">
+			<div class="box-h"><img class="box-img-h" src="images/redsquare.png"></div>
+			<div class="box-h"><img class="box-img-h" src="images/redsquare.png"></div>
+			<div class="box-h"><img class="box-img-h" src="images/redsquare.png"></div>
+			<div class="box-h"><img class="box-img-h" src="images/redsquare.png"></div>
+			<div class="box-h"><img class="box-img-h" src="images/redsquare.png"></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+
+
+<!-- Pyramid page -->
+<div id="pyramid-page-container">
+	<video src="video/pyramid_video.mov" id="pyramid-video">
+</div>
+
+<!-- Missionary page -->
+<div id="missionary-page-container">
+	<video src="video/missionary_video.mov" id="missionary-video">
+</div>
+
+<!-- Monster page -->
+<div id="mon-page-cont">
+	<div id="mon-fixed-cont">
+		<img src="images/monster_mumbler.png" id="monster-img">
+	</div>	
+</div>
+
+<!-- Game Over Page -->
+<div id="game-over-page">
+	<div id="go-message"></div>
+</div>
+
+<!-- Win Page -->
+<div id="win-page">
+	<div id="win-text">You were successfully able to save every character from the
+	trecherous depths of Silent Hill. Your heart fills with sense of extreme ease
+	as you leave the dark depths of this cursed place.<br><br>
+	The question remains: have you really left Silent Hill?
+	 </div>
+</div>
+
+<!-- Good Plus Ending Page -->
+<div id="plus-end-page">
+	<video src="video/secret_ending.mov" id="plus-end-vid"></video>
+</div>
+
+<!-- Timer Page -->
+<div id="timer-page"></div>
+
+
+
+<!-- AUDIO -->
+<audio src="audio/monstermusic01.mp3" id="mmonster01"></audio>
+<audio src="audio/monstermusic02.mp3" id="mmonster02"></audio>
+<audio src="audio/monstermusic03.mp3" id="mmonster03"></audio>
+<audio src="audio/sh_backtitle01.mp3" id="mbacktitle01"></audio>
+<audio src="audio/sh_backtitle02.mp3" id="mbacktitle02"></audio>
+<audio src="audio/sh_bgtheme01.mp3" id="mbg01"></audio>
+<audio src="audio/sh_bgtheme02.mp3" id="mbg02"></audio>
+<audio src="audio/sh_bgtheme03.mp3" id="mbg03"></audio>
+<audio src="audio/sh_intro01.mp3" id="mintro01"></audio>
+<audio src="audio/sh_intro02.mp3" id="mintro02"></audio>
+<audio src="audio/sh_intro02.mp3" id="mintro03"></audio>
+<audio src="audio/winmusic.mp3" id="mwin"></audio>
+<audio src="audio/charselectsound.mp3" id="charselect"></audio>
+<audio src="audio/diffselectsound.mp3" id="diffselect"></audio>
+<audio src="audio/mapsound.mp3" id="charreveal"></audio>
+<audio src="audio/beat.mp3" id="beat"></audio>
+
+
+
+<script type="text/javascript" src="scripts/script.js"></script>
+</body>
+</html>
